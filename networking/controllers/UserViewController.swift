@@ -21,12 +21,13 @@ class UserViewController: UITableViewController {
 			
 			switch result {
 			case .success( let response):
-//				let json = try! JSONSerialization.jsonObject(with: response.data, options: [])
-//				print(json)
+				let json = try! JSONSerialization.jsonObject(with: response.data, options: [])
+				print(json)
 				
 				let users = try! JSONDecoder().decode([User].self, from: response.data)
 				self.users = users
 				self.tableView.reloadData()
+				
 			case .failure(let error):
 				print(error)
 			}
@@ -47,7 +48,7 @@ class UserViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return users.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

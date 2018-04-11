@@ -44,12 +44,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		385CFB19207D15CC00BF1486 /* model */ = {
+		385CFB19207D15CC00BF1486 /* models */ = {
 			isa = PBXGroup;
 			children = (
 				38B14F7A207DC5F900764B2F /* User.swift */,
 			);
-			path = model;
+			path = models;
 			sourceTree = "<group>";
 		};
 		38A4AF40207D11EF006B38AA = {
@@ -73,16 +73,40 @@
 		38A4AF4B207D11F0006B38AA /* networking */ = {
 			isa = PBXGroup;
 			children = (
-				38B14F7E207DD07200764B2F /* UserViewController.swift */,
-				38B14F7F207DD07200764B2F /* UserViewController.xib */,
-				385CFB19207D15CC00BF1486 /* model */,
+				38DE0C2B207E0B510081FA1A /* network */,
+				38A4E3FD207E0B2600706C8A /* views */,
+				38A4E3FC207E0B1200706C8A /* controllers */,
+				385CFB19207D15CC00BF1486 /* models */,
 				38A4AF4C207D11F0006B38AA /* AppDelegate.swift */,
 				38A4AF53207D11F2006B38AA /* Assets.xcassets */,
 				38A4AF55207D11F2006B38AA /* LaunchScreen.storyboard */,
 				38A4AF58207D11F2006B38AA /* Info.plist */,
-				38B14F7C207DC61E00764B2F /* UserService.swift */,
 			);
 			path = networking;
+			sourceTree = "<group>";
+		};
+		38A4E3FC207E0B1200706C8A /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				38B14F7E207DD07200764B2F /* UserViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		38A4E3FD207E0B2600706C8A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				38B14F7F207DD07200764B2F /* UserViewController.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		38DE0C2B207E0B510081FA1A /* network */ = {
+			isa = PBXGroup;
+			children = (
+				38B14F7C207DC61E00764B2F /* UserService.swift */,
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 		5B1F2C1888D2C4C32EFE11F5 /* Pods */ = {
